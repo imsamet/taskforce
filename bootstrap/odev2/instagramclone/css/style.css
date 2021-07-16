@@ -1,9 +1,16 @@
+body{
+  padding-top: 100px;
+  background-color: #fafafa;
+}
+
 ::placeholder{
   text-align: center;
   font-size: 14px;
   color: gray;
-  background-position: 40%;
+  background-position: 35%;
   background-size: 6%;
+  background-image: url('../assets/search-solid.svg');
+  background-repeat: no-repeat;
 }
 
 input.empty {
@@ -43,4 +50,51 @@ input.empty {
 .rightpanellinks:hover {
   text-decoration: none;
   color: lightgrey;
+}
+
+/*  */
+.logo{
+  margin-left: 192px;
+}
+.rightpanel{
+  margin-left: 5px;
+  margin-top: 2px;
+}
+/* Bootstrap ile ver*/
+.stories{
+  display: flex;
+}
+.stories a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 9fr;
+  align-items: center;
+}
+.card-header span:nth-child(3){
+  margin-left: auto;
+}
+.card ul{
+  border: none!important;
+}
+.card ul span{
+  margin-left: auto;
+  margin-right: 7px;
+}
+.card-header, .card-footer{
+  background-color: #fff;
+}
+.card-footer{
+  display: flex;
+}
+.card-footer span:nth-child(2){
+  margin-left: auto;
+}
+.rightpanel{
+  position: fixed;
+  border: none;
+  background-color: transparent;
 }
